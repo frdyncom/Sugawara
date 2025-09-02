@@ -10161,6 +10161,10 @@ html {
     color: #000000;      /* hitam pekat */
     -webkit-text-stroke: 0.3px #000; /* garis tepi tipis biar makin tebal */
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 
 
