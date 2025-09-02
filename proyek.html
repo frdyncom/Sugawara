@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Portfolio Proyek" name="keywords">
+    <meta content="Portfolio Proyek PT. Sugawara Kogyo Indonesia" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logoski.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (buat arrow carousel) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <div class="logo-wrapper">
+                    <img src="img/logoski.png" alt="Logo" class="logo-img">
+                    <div class="logo-text">
+                        <div class="line1">PT. SUGAWARA</div>
+                        <div class="line2">KOGYO INDONESIA</div>
+                    </div>
+                </div>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="produk.html" class="nav-item nav-link">Product & Service</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="detail.html" class="dropdown-item active">Detail Produk</a>
+                            <a href="visimisi.html" class="dropdown-item">Visi & Misi</a>
+                            <a href="proyek.html" class="dropdown-item">Portofolio</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center my-5 py-5">
+            <h1 class="text-white mt-4 mb-4" style="font-size:50px; font-weight:700;">
+                Portfolio Proyek
+            </h1>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative mb-5">
+                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Works</h6>
+                <h1 class="display-4">Proyek Kami</h1>
+            </div>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+
+                <!-- Proyek 1 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek1">
+                        <img class="img-fluid w-100" src="img/tegalgubug.jpeg"
+                            alt="Rekonstruksi Ruas Jalan Budur – Susukan – Tegalgubug"
+                            style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">PEKERJAAN REKONSTRUKSI RUAS JALAN</h5>
+                        <p class="mb-1">Budur – Susukan – Tegalgubug</p>
+                        <small class="text-muted">15 April – 16 April 2023</small>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek2">
+                        <img class="img-fluid w-100" src="img/proyekcipali.jpeg"
+                            alt="Tol Cikopo–Palimanan - Spray Emulsi" style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">TOL CIKOPO–PALIMANAN</h5>
+                        <p class="mb-1">Spray Emulsi – KM 171+850 s/d 172+769</p>
+                        <small class="text-muted">10 Februari 2025</small>
+                    </div>
+                </div>
+                <!-- Proyek 3 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek3">
+                        <img class="img-fluid w-100" src="img/proyekcimanuk.jpeg" alt="Jembatan Cimanuk - Spray Emulsi"
+                            style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">JEMBATAN CALLENDER HAMILTON (CH)</h5>
+                        <p class="mb-1">Cimanuk – Pulau Jawa</p>
+                        <small class="text-muted">27 Agustus – 8 September 2023</small>
+                    </div>
+                </div>
+                <!-- Proyek 4 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek4">
+                        <img class="img-fluid w-100" src="img/proyekcipemali.jpeg" alt="Jembatan CH - Cipemali"
+                            style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">JEMBATAN CALLENDER HAMILTON (CH)</h5>
+                        <p class="mb-1">Cipemali – Pulau Jawa</p>
+                        <small class="text-muted">16 Oktober – 25 Oktober 2023</small>
+                    </div>
+                </div>
+                <!-- Proyek 5 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek5">
+                        <img class="img-fluid w-100" src="img/proyekkarangsembung.jpeg" alt="Tol Cikopo - Spray Emulsi"
+                            style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">TOL CIKOPO - PALIMANAN KARANG SEMBUNG</h5>
+                        <p class="mb-1">Cipemali – Pulau Jawa</p>
+                        <small class="text-muted">Tahun 2022</small>
+                    </div>
+                </div>
+                <!-- Proyek 6 -->
+                <div class="team-item h-100 d-flex flex-column">
+                    <a href="#" data-toggle="modal" data-target="#modalProyek6">
+                        <img class="img-fluid w-100" src="img/proyekcisundawu.jpeg"
+                            alt="JEMBATAN CISARONGGE TOL CISUNDAWU" style="height:250px; object-fit:cover;">
+                    </a>
+                    <div class="bg-light text-center p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                        <h5 class="mb-2">JEMBATAN CISARONGGE TOL CISUNDAWU</h5>
+                        <p class="mb-1">Core drill ac wc</p>
+                        <small class="text-muted">19 Juli 2025</small>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Modal Fullscreen -->
+    <div class="modal fade" id="modalProyek1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="img/tegalgubug.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Fullscreen Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fullscreen Proyek 2 -->
+    <div class="modal fade" id="modalProyek2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="img/proyekcipali.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Tol Cikopo–Palimanan - Spray Emulsi">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fullscreen Proyek 3 -->
+    <div class="modal fade" id="modalProyek3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="img/proyekcimanuk.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Tol Cikopo–Palimanan - Spray Emulsi">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fullscreen Proyek 4 -->
+    <div class="modal fade" id="modalProyek4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <button type="button" class="close text-white p-3" data-dismiss="modal" aria-label="Close"
+                        style="position:absolute; top:10px; right:20px; z-index:1051; font-size:2rem;">
+                        &larr; Back
+                    </button>
+                    <img src="img/proyekcipemali.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Tol Cikopo–Palimanan - Spray Emulsi">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fullscreen Proyek 5 -->
+    <div class="modal fade" id="modalProyek5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="img/proyekkarangsembung.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Tol Cikopo–Palimanan - Spray Emulsi">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fullscreen Proyek 6 -->
+    <div class="modal fade" id="modalProyek6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <img src="img/proyekcisundawu.jpeg" class="w-100" style="max-height:90vh; object-fit:contain;"
+                        alt="Tol Cikopo–Palimanan - Spray Emulsi">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Informasi Lebih Lanjut Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Informasi Lebih Lanjut</h2>
+            <p class="mb-4">Untuk pertanyaan atau detail proyek, hubungi kami via WhatsApp</p>
+            <a href="https://wa.me/6281262313143?text=Halo%2C%20saya%20ingin%20informasi%20lebih%20lanjut%20tentang%20PT.%20Sugawara%20Kogyo%20Indonesia"
+                target="_blank" class="whatsapp-btn d-inline-flex align-items-center justify-content-center">
+                <i class="fab fa-whatsapp fa-2x me-2"></i> Chat via WhatsApp
+            </a>
+        </div>
+    </div>
+    <!-- Informasi Lebih Lanjut End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <!-- Kiri: Logo + Deskripsi -->
+                <div class="col-md-6 mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logoski.png" alt="Logo" class="img-fluid" style="width: 60px; height: auto;">
+                        <h2 class="fw-bold text-white mb-0 ms-3">SKI</h2>
+                    </div>
+                    <p class="m-0 text-white">
+                        PT. SUGAWARA KOGYO INDONESIA menyediakan solusi aspal berkualitas tinggi untuk
+                        proyek jalan raya dan infrastruktur di seluruh Indonesia.
+                    </p>
+                </div>
+
+                <!-- Kanan: Info Kontak dan Layanan -->
+                <div class="col-md-6 mb-5">
+                    <div class="row">
+                        <!-- Info Kontak -->
+                        <div class="col-md-6 mb-4">
+                            <h3 class="text-white mb-4">Get In Touch</h3>
+                            <p><i class="fa fa-map-marker-alt mr-2"></i>Jl Raya Cirebon Bandung KM 09, Kelurahan
+                                Banjaran, Kecamatan Sumberjaya, Kabupaten Majalengka - Jawa Barat</p>
+                            <p><i class="fa fa-phone-alt mr-2"></i>+62 81394400220</p>
+                            <p><i class="fa fa-envelope mr-2"></i>kso.skismu@gmail.com</p>
+                            <div class="d-flex justify-content-start mt-3" style="gap: 25px;">
+                                <a class="text-white" href="https://wa.me/+6281394400220" target="_blank"><i
+                                        class="fab fa-whatsapp fa-2x"></i></a>
+                                <a class="text-white" href="https://www.facebook.com/username_anda" target="_blank"><i
+                                        class="fab fa-facebook fa-2x"></i></a>
+                                <a class="text-white" href="https://twitter.com/username_anda" target="_blank"><i
+                                        class="fab fa-twitter fa-2x"></i></a>
+                                <a class="text-white"
+                                    href="https://www.instagram.com/kso.skismu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                        class="fab fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Layanan -->
+                        <div class="col-md-6 mb-4">
+                            <h3 class="text-white mb-4">Our Services</h3>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white-50 mb-2" href="produk.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Asphalt Production</a>
+                                <a class="text-white-50 mb-2" href="proyek.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Road Construction</a>
+                                <a class="text-white-50 mb-2" href="proyek.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Maintenance & Repair</a>
+                                <a class="text-white-50" href="contact.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Consultation & Planning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="container-fluid bg-dark text-white-50 border-top py-4"
+            style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0">Copyright &copy;
+                            <a class="text-white" href="#">PT. SUGAWARA KOGYO INDONESIA</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $('.team-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 800,
+            margin: 30,
+            dots: true,
+            loop: true,
+            nav: true,
+            navText: [
+                '<span class="btn btn-dark rounded-circle shadow-sm"><i class="bi bi-chevron-left"></i></span>',
+                '<span class="btn btn-dark rounded-circle shadow-sm"><i class="bi bi-chevron-right"></i></span>'
+            ],
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                992: { items: 3 },
+                1200: { items: 4 }
+            }
+        });
+    </script>
+</body>
+
+</html>
