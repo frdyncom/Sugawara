@@ -10156,4 +10156,11 @@ html {
  .courses-text h4 {
     color: white;
 }
+.bold-black {
+    font-weight: 1000;   /* lebih dari bold normal */
+    color: #000000;      /* hitam pekat */
+    -webkit-text-stroke: 0.3px #000; /* garis tepi tipis biar makin tebal */
+}
+
+
 
