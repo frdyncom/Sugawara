@@ -10165,6 +10165,11 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+.container, .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 
 
 
