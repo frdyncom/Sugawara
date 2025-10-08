@@ -10224,6 +10224,9 @@ html, body {
     border: none;           /* hapus border jika ada */
     outline: none;          /* amanin untuk fokus */
 }
+.whatsapp-chat .chat-text {
+    display: none; /* hanya sembunyikan teks di popup */
+}
 
 
 
