@@ -10163,6 +10163,7 @@ html {
     color: #000000;      /* hitam pekat */
     -webkit-text-stroke: 0.3px #000; /* garis tepi tipis biar makin tebal */
 }
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -10224,9 +10225,242 @@ html, body {
     border: none;           /* hapus border jika ada */
     outline: none;          /* amanin untuk fokus */
 }
+/* Tombol popup flowchart */
+.flowchart-btn {
+    position: fixed;
+    bottom: 100px; /* posisinya di atas tombol WhatsApp */
+    left: 20px;
+    background: linear-gradient(135deg, #007bff, #0040ff);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 9999; /* dinaikin supaya di atas WhatsApp */
+    transition: transform 0.3s;
+}
+.flowchart-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Popup overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* di atas semua */
+}
+
+/* Isi popup */
+.popup-content {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    animation: popupIn 0.5s ease;
+}
+
+/* Tombol close (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+.close-btn:hover {
+    color: red;
+}
+
+/* Gambar flowchart */
+.flowchart-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;     
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+/* Animasi popup */
+@keyframes popupIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+.layanan-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.layanan-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.layanan-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.layanan-card:hover .layanan-img {
+    transform: scale(1.05);
+}
+
+/* Overlay halus di atas gambar */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Icon klik di tengah (langsung muncul) */
+.click-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 60px;
+    color: #fff;
+    animation: pulseClick 1.4s ease-in-out infinite;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Efek berdenyut lembut */
+@keyframes pulseClick {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.85; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* Teks bawah */
+.courses-text {
+    margin-top: 15px;
+}
+
+.courses-text h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.courses-text p {
+    color: #555;
+    font-size: 15px;
+}
+
+.layanan-card:hover .courses-text h4 {
+    color: #007bff;
+}
+/* Struktur utama card */
+.layanan-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: block;
+}
+
+.layanan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.layanan-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.layanan-card:hover .layanan-img {
+    transform: scale(1.08);
+}
+
+/* Overlay tetap ada tapi transparan */
+.courses-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Hanya semi-transparan */
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.click-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;           /* lebih kecil */
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 6px 15px;         /* lebih kecil */
+    border: 1.5px solid rgba(255,255,255,0.7);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05); /* transparan */
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Animasi berdenyut lembut */
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    }
+}
 
 
 
+/* Teks deskripsi tetap di bawah */
+.courses-text {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
+.courses-text h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
-
+.courses-text p {
+    font-size: 15px;
+    margin: 0;
+}
